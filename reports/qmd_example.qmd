@@ -16,25 +16,25 @@ editor: source
 library(tidyverse)
 ```
 
-### Aim
+## Aim
 
 This project explores the historical population of horses in Canada 
 between 1906 and 1972 for each province.
 
-### Data
+## Data
 
 Horse population data were sourced from the 
 [Government of Canada's Open Data website](http://open.canada.ca/en/open-data) 
-(Government of Canada, 2017a and Government of Canada, 2017b).
+[@horses1 and @horses2].
 
-### Methods
+## Methods
 
-The R programming language (R Core Team, 2019) 
+The R programming language [@R] 
 and the following R packages were used to perform the analysis: 
-knitr (Xie 2014), tidyverse (Wickham 2017), and Quarto (Allaire et al 2022). 
-*Note: this report is adapted from Timbers (2020).*
+knitr [@knitr], tidyverse [@tidyverse], and Quarto [@Allaire_Quarto_2022]. 
+*Note: this report is adapted from @ttimbers-horses.*
 
-### Results
+## Results
 
 ```{r}
 #| echo: false
@@ -69,7 +69,7 @@ Note that we define standard deviation (of a sample) as
 
 $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
-Additionally, note that in @tbl-horses-sd we consider the sample standard deviation of the number of horses during the same time span as Figure 1.
+Additionally, note that in @tbl-horses-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-horse-pops.
 
 ```{r}
 #| echo: false
@@ -81,4 +81,4 @@ knitr::include_graphics("../results/horse_pop_plot_largest_sd.png")
 
 In @fig-horse-sd we zoom in and look at the province of `r largest_sd`, which had the largest spread of values in terms of standard deviation.
 
-### References
+## References
